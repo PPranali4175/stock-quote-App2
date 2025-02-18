@@ -22,4 +22,5 @@ class StockModel {
       marketCap: json['06. volume'] ?? 'N/A',
     );
   }
+ 
 }

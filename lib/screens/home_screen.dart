@@ -67,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     onPressed: () {
                       final symbol = _searchController.text.trim();
                       if (symbol.isNotEmpty) {
-                        stockProvider.fetchStockDetails(symbol);
+                        stockProvider.fetchStockDetails(symbol,context);
                       }
                     },
                     style: ElevatedButton.styleFrom(

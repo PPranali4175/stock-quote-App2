@@ -19,7 +19,7 @@ class _StockDetailsScreenState extends State<StockDetailsScreen> {
    
     Future.microtask(() {
       Provider.of<StockProvider>(context, listen: false)
-          .fetchStockDetails(widget.symbol);
+          .fetchStockDetails(widget.symbol,context);
     });
   }
 
